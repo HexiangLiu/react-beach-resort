@@ -1,26 +1,35 @@
+//Module
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch, useHistory } from 'react-router-dom';
 
-function App() {
+//Pages
+import Home from './pages/Home';
+import Rooms from './pages/Rooms';
+import SingleRoom from './pages/SingleRoom';
+import Error from './pages/Error';
+
+//Components
+import Navbar from './components/Navbar';
+
+import './App.scss';
+export default function App(props) {
+  console.log(useHistory());
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/rooms">
+          <Rooms />
+        </Route>
+        <Route exact path="/rooms/:room">
+          <SingleRoom />
+        </Route>
+        <Route component={Error} />
+      </Switch>
+    </>
   );
 }
-
-export default App;
