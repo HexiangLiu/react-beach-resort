@@ -1,0 +1,29 @@
+.services {
+  padding: 6rem 4rem 10rem 4rem;
+  text-align: center;
+
+  &__detail {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+  }
+}
+
+.service {
+  padding: 2rem 5rem;
+  text-align: center;
+  font-size: 1.4rem;
+
+  &__icon {
+    display: inline-block;
+    color: var(--color-primary);
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+}
