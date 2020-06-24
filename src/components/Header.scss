@@ -1,0 +1,16 @@
+.Header {
+  height: calc(100vh - 6rem);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__default {
+    background-image: url(../images/defaultBcg.jpeg);
+  }
+
+  &__rooms {
+    background-image: url(../images/room-2.jpeg);
+  }
+}
