@@ -1,0 +1,10 @@
+.featured {
+  padding: var(--section-padding);
+  background-color: var(--color-grey-light-1);
+
+  &__detail {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+}

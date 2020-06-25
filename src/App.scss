@@ -11,6 +11,8 @@
   --color-grey-dark-1: #54483a;
   --color-grey-dark-2: #6d5d4b;
 
+  --shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+
   // FONT VARIABLES
   --font-primary: 'Nunito', sans-serif;
   --font-display: 'Josefin Sans', sans-serif;
@@ -22,6 +24,7 @@
   --spacing-primary: 0.8rem;
   --spacing-secondary: 0.5rem;
   --spacing-teritary: 0.2rem;
+  --section-padding: 6rem 4rem 10rem 4rem;
 }
 
 *,
@@ -64,6 +67,7 @@ body {
 }
 
 .heading--1 {
+  text-align: center;
   margin-bottom: 3rem;
   font-size: 5rem;
   font-weight: 600;
@@ -72,14 +76,24 @@ body {
 }
 
 .heading--2 {
-  display: inline-block;
+  display: block;
+  text-align: center;
   margin-bottom: 2rem;
-  border-bottom: 2px solid var(--color-primary);
   letter-spacing: var(--spacing-teritary);
   font-size: 3.5rem;
   font-weight: 600;
   text-transform: capitalize;
   font-family: var(--font-display);
+
+  &::after {
+    content: '';
+    text-align: center;
+    display: block;
+    height: 2px;
+    width: 20%;
+    background-color: var(--color-primary);
+    margin: 0 auto;
+  }
 }
 
 .heading--3 {
@@ -87,4 +101,9 @@ body {
   margin-bottom: 1.5rem;
   text-transform: capitalize;
   font-family: var(--font-display);
+}
+
+.loading {
+  text-transform: capitalize;
+  text-align: center;
 }

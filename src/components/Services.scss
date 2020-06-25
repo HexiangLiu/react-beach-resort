@@ -1,5 +1,5 @@
 .services {
-  padding: 6rem 4rem 10rem 4rem;
+  padding: var(--section-padding);
   text-align: center;
 
   &__detail {
@@ -19,11 +19,5 @@
     color: var(--color-primary);
     font-size: 4rem;
     margin-bottom: 0.5rem;
-  }
-
-  &__title {
-    margin-bottom: 1rem;
-    font-weight: 600;
-    text-transform: capitalize;
   }
 }

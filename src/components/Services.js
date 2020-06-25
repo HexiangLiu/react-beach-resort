@@ -33,9 +33,7 @@ export default function Services() {
 
   return (
     <div className="services">
-      <div className="title">
-        <h2 className="heading--2">services</h2>
-      </div>
+      <h2 className="heading--2">services</h2>
 
       <div className="services__detail">
         {services.map((service, index) => {
