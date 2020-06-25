@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Services from '../components/Services';
+import FeatureRooms from '../components/FeaturedRooms';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         </Banner>
       </Header>
       <Services />
+      <FeatureRooms />
     </>
   );
 }

@@ -12,6 +12,7 @@ import Error from './pages/Error';
 import Navbar from './components/Navbar';
 
 import './App.scss';
+
 export default function App(props) {
   console.log(useHistory());
 
