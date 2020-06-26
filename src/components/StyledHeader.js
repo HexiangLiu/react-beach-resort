@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
-  height: 60vh;
+  height: calc(100vh - 6rem);
   background-size: cover;
   background-position: center;
   display: flex;

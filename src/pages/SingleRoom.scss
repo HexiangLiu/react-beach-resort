@@ -11,3 +11,69 @@
   color: var(--color-grey-light-1);
   background-color: rgba(#101d2c, 0.8);
 }
+
+.single-room {
+  padding: 10rem 10rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  &__images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  }
+
+  &__description {
+    display: grid;
+    row-gap: 2rem;
+    margin-right: 4rem;
+  }
+
+  &__detail {
+    display: grid;
+    row-gap: 2rem;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-size: 2rem;
+  }
+}
+
+.room-extras {
+  font-size: 1.4rem;
+  padding: 2rem 10rem;
+  font-weight: 600;
+
+  h6 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    row-gap: 1rem;
+  }
+
+  li {
+    list-style-type: '-';
+  }
+}
