@@ -1,6 +1,6 @@
 //Module
 import React from 'react';
-import { Route, Switch, useHistory } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 //Pages
 import Home from './pages/Home';
@@ -13,22 +13,14 @@ import Navbar from './components/Navbar';
 
 import './App.scss';
 
-export default function App(props) {
-  console.log(useHistory());
-
+export default function App() {
   return (
     <>
       <Navbar />
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/rooms">
-          <Rooms />
-        </Route>
-        <Route exact path="/rooms/:room">
-          <SingleRoom />
-        </Route>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/rooms" component={Rooms} />
+        <Route exact path="/rooms/:slug" component={SingleRoom} />
         <Route component={Error} />
       </Switch>
     </>

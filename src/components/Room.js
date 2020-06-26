@@ -7,7 +7,6 @@ import defaultImg from '../images/room-1.jpeg';
 import './Room.scss';
 
 export default function Room({ room }) {
-  console.log(room);
   const { images, name, price, slug } = room;
   return (
     <article className="room">
