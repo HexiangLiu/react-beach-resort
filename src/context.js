@@ -21,7 +21,7 @@ class RoomProvider extends Component {
       rooms,
       featuredRooms,
       sortedRooms: rooms,
-      loading: false,
+      loading: true,
     });
   }
 
@@ -52,6 +52,6 @@ class RoomProvider extends Component {
   }
 }
 
-const RoomConsumer = RoomContext.Consumenr;
+const RoomConsumer = RoomContext.Consumer;
 
 export { RoomContext, RoomProvider, RoomConsumer };
