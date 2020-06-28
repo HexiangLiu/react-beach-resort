@@ -15,6 +15,7 @@
     height: 100%;
     object-fit: cover;
     transition: var(--transition-primary);
+    overflow: hidden;
 
     grid-column: 1 / -1;
     grid-row: 1 / span 5;
@@ -41,9 +42,10 @@
   &__name {
     grid-column: 1 / -1;
     grid-row: 6 / -1;
-    background-color: var(--color-grey-light-2);
+    background-color: var(--color-secondary);
+    color: #fff;
     text-align: center;
-    font-weight: 600;
+    font-weight: 800;
     display: flex;
     justify-content: center;
     align-items: center;

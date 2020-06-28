@@ -12,15 +12,14 @@ export default function RoomsContainer() {
   return (
     <RoomConsumer>
       {(value) => {
-        const { sortedRooms, loading, rooms } = value;
-        console.log(sortedRooms, loading);
+        const { loading, sortedRooms } = value;
         if (loading) {
           return <Loading />;
         }
         return (
           <div className="rooms-container">
-            Hello from Rooms Container
-            <RoomsFilter rooms={rooms} />
+            <h2 className="heading--2">search rooms</h2>
+            <RoomsFilter />
             <RoomsList sortedRooms={sortedRooms} />
           </div>
         );

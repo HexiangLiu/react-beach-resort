@@ -1,0 +1,45 @@
+.roomfilter {
+  padding: var(--section-padding);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 600;
+  gap: 5rem;
+  letter-spacing: 3px;
+  align-items: center;
+
+  & > * {
+    display: flex;
+    flex-direction: column;
+  }
+
+  select {
+    font-size: inherit;
+    border-radius: 3px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &__size {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    label {
+      grid-column: 1/-1;
+    }
+    input {
+      border-radius: 3px;
+      border: 1px solid var(--color-grey-light-2);
+      width: 50%;
+    }
+  }
+
+  &__extra {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+}
