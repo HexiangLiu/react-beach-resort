@@ -15,7 +15,6 @@ export default class SingleRoom extends Component {
   render() {
     const { getRoom } = this.context;
     const room = getRoom(this.state.slug);
-    console.log(room);
     if (!room) {
       return (
         <div className="error">
@@ -39,7 +38,7 @@ export default class SingleRoom extends Component {
     } = room;
 
     const [mainImg, ...restImg] = images;
-    console.log(restImg);
+
     return (
       <>
         <StyledHeader img={mainImg}>
