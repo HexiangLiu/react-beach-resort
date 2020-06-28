@@ -8,6 +8,10 @@
   align-items: center;
   justify-content: center;
 
+  @media screen and (max-width: 31.25em) {
+    padding: 3rem 5rem;
+  }
+
   h1 {
     border-bottom: 2px solid var(--color-primary-dark);
   }
