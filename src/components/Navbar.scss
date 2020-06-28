@@ -100,4 +100,8 @@
 
 .show {
   height: 100px;
+
+  @media screen and (max-width: 31.25em) {
+    height: 60px;
+  }
 }

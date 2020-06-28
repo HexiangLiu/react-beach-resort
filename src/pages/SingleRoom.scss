@@ -13,13 +13,17 @@
 }
 
 .single-room {
-  padding: 10rem 10rem;
+  padding: var(--section-padding);
   font-size: 1.4rem;
   font-weight: 600;
 
+  @media only screen and (max-width: 50em) {
+    padding: 6rem 4rem 6rem 4rem;
+  }
+
   &__images {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
     margin-bottom: 4rem;
   }
@@ -37,13 +41,13 @@
 
   &__info {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 5rem;
   }
 
   &__description {
     display: grid;
     row-gap: 2rem;
-    margin-right: 4rem;
   }
 
   &__detail {
@@ -57,7 +61,7 @@
 
 .room-extras {
   font-size: 1.4rem;
-  padding: 2rem 10rem;
+  padding: 0 4rem 6rem 4rem;
   font-weight: 600;
 
   h6 {
