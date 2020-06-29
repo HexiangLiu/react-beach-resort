@@ -4,4 +4,6 @@ A Fully Responsive React Project designed with React Router, React Icons, Styled
 
 https://henry-react-beach-resort.netlify.app/
 
+## Copy right by Hexiang Liu, please do not use it for commerical purposes
+
 
